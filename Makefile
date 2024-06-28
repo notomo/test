@@ -1,5 +1,5 @@
 test: FORCE
-	act push
+	act push -s GITHUB_TOKEN="$$(gh auth token)"
 
 list: FORCE
 	act --list
